@@ -186,28 +186,32 @@ section {
   .lessons-grid { grid-template-columns: repeat(4, 1fr); }
 }
 .lesson-card {
-  text-align: center;
+  background: #ece6da;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
 }
 .lesson-card img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  max-width: 300px;
+  display: block;
 }
 .img-crop-top { object-position: top; }
-.lesson-card p {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 1rem;
-  text-align: left;
-}
 .lesson-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #333;
-  margin-bottom: 1rem;
+  padding: 1rem 1rem 0.5rem;
+}
+.lesson-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  padding: 0 1rem 1rem;
+  margin: 0;
 }
 .btn-outline-red {
   background: #a52a2a;
